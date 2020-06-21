@@ -6,7 +6,7 @@ This is a project for a Quantum Algorithms course at NTU, offered by Professor W
 
 ### Overview
 
-A Quantum Phase Estimation circuit takes a unitary matrix *U* and, by applying it multiple times as a Controlled Unitary followed by a Quantum Fourier Transform, the Quantum Phase Estimation circuit is able to estimate the phase of *U*.
+A Quantum Phase Estimation circuit takes a unitary matrix *U* and, by applying it multiple times as a Controlled Unitary followed by an inverse Quantum Fourier Transform, the Quantum Phase Estimation circuit is able to estimate the phase of *U*.
 
 Phase estimation allows for more advanced circuits and algorithms, such as the HHL algorithm which can be used to solve linear systems *Ax = b*.
 

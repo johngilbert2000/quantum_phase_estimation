@@ -18,7 +18,7 @@ More details regarding Quantum Phase Estimation can be found in the Jupyter Note
 - Activate the conda base environment from the terminal (`source anaconda3/bin/activate` or `. anaconda3/bin/activate`)
 - Create a conda environment (`conda create -n quantum python=3.7`)
 - Activate the conda environment (`conda activate quantum`)
-- Install necessary packages (`conda install jupyter matplotlib mypy qiskit=0.18.0`)
+- Install necessary packages (`pip install qiskit==0.18.0; conda install jupyter matplotlib numpy mypy`)
 - Run Jupyter (`jupyter notebook`)
 - Open *QPE_Demonstration.ipynb* and run the cells
 
@@ -33,7 +33,7 @@ python phase_estimation.py
 
 To use a different Controlled Unitary with an unknown phase, modify `U_function` in *phase_estimation.py* to add the desired set of gates, and to not include the `angle` parameter. Note that `U_function` must return the `QuantumCircuit` that it modifies.
 
-Note: Type checking can be performed with mypy:
+**Note**: Type checking can be performed with mypy:
 ```
 mypy phase_estimation.py
 ```

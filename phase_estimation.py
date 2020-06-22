@@ -5,7 +5,7 @@ from qiskit.visualization import plot_histogram
 from typing import Tuple, Callable
 from functools import partial
 
-def U_function(circuit: QuantumCircuit, control: int, target: int, angle: float) -> QuantumCircuit:
+def U_function(angle: float, circuit: QuantumCircuit, control: int, target: int) -> QuantumCircuit:
     """
     Adds desired Controlled Unitary gates to a given circuit
     
@@ -98,8 +98,8 @@ def main():
             print(f"Invalid theta {inp}. Using theta = 1/7")
             theta = 1/7
     
-    # Create a Unitary function with theta and U_function
-    U = partial(lambda qc, c, t: U_function(qc, c, t, 2*np.pi*(theta)))
+    # Create a Unitary function with phase theta
+    U = partial(U_function, 2*np.pi*theta)
     
     est_theta, circuit = phase_estimation(U=U, bits=bits, show=False)
     print(f"Estimated theta: {est_theta}")

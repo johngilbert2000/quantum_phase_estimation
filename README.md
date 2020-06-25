@@ -22,6 +22,11 @@ More details regarding Quantum Phase Estimation can be found in the Jupyter Note
 - Run Jupyter (`jupyter notebook`)
 - Open *QPE_Demonstration.ipynb* and run the cells
 
+### Example
+
+As demonstrated in *QPE_Demonstration.ipynb*, here is an example of how to use the `phase_estimation` and `U_function` functions:
+![example](https://github.com/johngilbert2000/quantum_phase_estimation/blob/master/%E9%9B%BB%E8%B7%AF%E5%9C%96_examples/%E9%9B%BB%E8%B7%AF%E5%9C%96_example.png)
+
 ### Running *phase_estimation.py*
 
 Alternatively, *phase_estimation.py* can be run directly from the terminal to accept input from the user:

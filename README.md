@@ -14,6 +14,7 @@ More details regarding Quantum Phase Estimation can be found in the Jupyter Note
 
 ### Jupyter Setup
 
+- Clone the repository, if not already installed (`git clone https://github.com/johngilbert2000/quantum_phase_estimation.git`)
 - Install [Anaconda](https://docs.anaconda.com/anaconda/install/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 - Activate the conda base environment from the terminal (`source anaconda3/bin/activate` or `. anaconda3/bin/activate`)
 - Create a conda environment (`conda create -n quantum python=3.7`)
@@ -25,7 +26,7 @@ More details regarding Quantum Phase Estimation can be found in the Jupyter Note
 ### Example
 
 As demonstrated in *QPE_Demonstration.ipynb*, here is an example of how to use the `phase_estimation` and `U_function` functions:
-![example](https://github.com/johngilbert2000/quantum_phase_estimation/blob/master/%E9%9B%BB%E8%B7%AF%E5%9C%96_examples/%E9%9B%BB%E8%B7%AF%E5%9C%96_example.png)
+![example](https://github.com/johngilbert2000/quantum_phase_estimation/blob/master/circuit_images/circuit_example.png)
 
 ### Running *phase_estimation.py*
 
